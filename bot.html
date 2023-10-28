@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Tutorial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat bot</title>
+  <link rel="stylesheet" href="bot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="chatbot">
-     <header>
-        <h1>Chatbot</h1>
-     </header>
-      <ul class="chatbox" >
-               <li class="chat incoming">
-                <span class="material-symbols-outlined">smart-toy</span>
 
-               </li>
-      </ul>
-      <footer>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, vitae!</p>
-      </footer>
+<body class="active">
+  <div class="close">
+    <i class="fa-solid fa-xmark"></i>
+      <i class="fa-regular fa-message"></i>
+    
+  </div>
 
-
+  <div class="container">
+    <div class="container_header">
+      <span>Navi Chatbot</span>
+      <i class="fa-solid fa-xmark" id="cross"></i>
     </div>
+    <ul class="container_text_content">
+      <div class="outgoing chat">
+       <span class="fa-solid fa-robot"></span>
+        <p>Hi ,how can i assist you</p>
+      </div>
+      
+        <!-- <div class="incoming chat">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, animi?</p>
+        </div> -->
+      
+      </ul>
+    <div class="container_text_input">
+      <input type="text" placeholder="Enter a message">
+      <i class="fa-solid fa-circle-arrow-right"></i>
+    </div>
+
+  </div>
+
+  <script src="bot.js" defer></script>
 </body>
+
 </html>

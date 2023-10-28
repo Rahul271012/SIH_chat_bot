@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 94, 94);
+
+
+}
+
+.container{
+    height: 600px;
+    width: 420px;
+    background-color: #dcf4d4;
+    position: fixed;
+    right: 50px;
+    bottom: 105px;
+    /* justify-self: flex-end; */
+    /* justify-self: right; */
+    display: flex;
+    flex-direction: column;
+    
+    /* margin: 5rem; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 3rem;
+    margin-top: 5rem;
+    box-shadow: 0px 5px 50px rgb(8, 195, 202),-5px 5px 50px rgb(23, 72, 208),5px -5px 50px rgb(226, 237, 63);
+    border: none;
+    outline: none;
+   
+    
+}
+
+.container .container_header{
+    display: flex;
+    
+}
+.container_header{
+    height: 10%;
+    width: 100%;
+    background-color: #2a64b5;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    display: flex; 
+    align-items: center;
+    justify-content:space-between; 
+    border-radius:10px 10px 0 0;
+    padding-left: 33%;
+    padding-right: 3%;
+   
+   
+}
+.container_header i{
+ display: none;
+
+}
+
+.container_text_input{
+    height: auto;
+    min-height: 4rem;
+   
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    
+    
+
+
+}
+.container_text_input input{
+    width: 90%;
+    height: auto;
+    border-style: none;
+    font-size: 1.3rem;
+    /* text-align: center; */
+    border-right: none;
+    border-radius: 0 0 0 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+    padding-left:5px ;
+   
+}
+.container_text_input i{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: #d66d0a;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0 0 10px 0;
+
+}
+
+.container_text_content{
+   
+    height: 600px;
+    width: 100%;
+    margin-top: 1rem;
+    overflow-y: auto;
+    position: relative;
+transform-origin:bottom right ;
+    padding: 10px 20px 70px;
+    transition: all 0.3s ease;
+}
+
+.outgoing{
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    min-height: 15%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px 10px 0 10px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    
+}
+.outgoing span{
+    height: 50%;
+    min-width: 14%;
+    background-color: #2a64b5 ;   
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    align-self: flex-end;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 1px;
+    margin-left: 5px;
+}
+.outgoing p{
+    height: auto;
+    width: auto;
+    background-color: #c9bfbf;
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    
+    
+    border-radius: 5px 5px 0 5px;
+    font-size: 1.1rem;
+    padding: 15px 10px 15px 5px;
+    margin-left: 5px;
+}
+#incoming{
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.incoming{
+   
+    /* width: auto;
+    max-width: 80%;
+    height: auto; */  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* position: relative;    */
+    
+    
+}
+.incoming p{
+    width: auto;
+    max-width: 80%;
+    height: auto; 
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0 10px;
+
+    background-color: #2a64b5;
+    color: #c5c1c1;
+    display: flex;
+   /* justify-content:flex-end ; */
+   text-align: flex-end;
+   padding: 10px 10px;
+   
+}
+.close{
+    height: 50px;
+    width: 50px;
+    
+    background: #0f85fb;
+    font-size: 2rem;
+    
+    cursor: pointer;
+    position: fixed;
+    right: 85px;
+    bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    outline: none;
+    border: none;
+    /* background: transparent; */
+    box-shadow: 0px 5px 10px rgb(50, 223, 12),-5px 5px 100px rgb(6, 194, 6),5px -5px 10px rgb(16, 228, 76);
+    
+}
+
+.close i{
+    height: 100%;
+    width: 100%;
+  
+    color: #fff;
+    display: flex;
+    font-weight: 650;
+    justify-content: center;
+    align-items: center; 
+    position:absolute ;
+    transition: all 0.3s ease
+}
+
+.active .close :first-child,
+.close :last-child{
+   transform: rotate(360deg);
+  opacity: 0;
+  font-weight: 500;
+
+  
+}
+.active .close :last-child{
+    opacity: 1;
+}
+
+
+
+.close:hover{
+    background-color: #0d70d3;
+}
+.active .container{
+    transition: 5s ease;
+    display: none;
+}
+
+
+@media (max-width: 900px){
+  
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #dcf4d4;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    /* justify-self: flex-end; */
+    /* justify-self: right; */
+    display: flex;
+    flex-direction: column;
+    
+    /* margin: 5rem; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    box-shadow: 0px 5px 50px rgb(8, 195, 202),-5px 5px 50px rgb(23, 72, 208),5px -5px 50px rgb(226, 237, 63);
+    border: none;
+    outline: none;
+   
+    
+}
+
+.container_text_content{
+   
+    height: 100%;
+    width: 100%;
+    margin-top: 0.2rem;   
+}
+
+.outgoing span{
+    height: 50%;
+    min-width: 14%;
+    font-size: 1.7rem;
+}
+.outgoing p{
+    /* min-height: 70px; */
+    height: auto;
+    width: auto;
+    font-size: 1.7rem;
+}
+
+.incoming p{
+    width: auto;
+    max-width: 80%;
+    height: auto; 
+    font-size: 1.7rem;
+   font-weight: 500;
+}
+
+.container_text_input{
+    height: auto;
+    min-height: 5rem;
+    width: 100%;
+   
+}
+.container_text_input input{
+    width: 87%;
+    height: auto;
+    border-style: none;
+    font-size: 2.0rem;
+
+}
+.container_text_input i{
+    width: 13%;
+    height: 100%;
+    font-size: 2.0rem;
+
+}
+.container_header i{
+    display: inline;
+   
+   }
+
+   .close{
+    height: 50px;
+    width: 50px;
+    
+    background: #0f85fb;
+    font-size: 2rem;
+    
+    cursor: pointer;
+    position: fixed;
+    right: 45px;
+    bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    outline: none;
+    border: none;
+    /* background: transparent; */
+    box-shadow: 0px 5px 10px rgb(50, 223, 12),-5px 5px 100px rgb(6, 194, 6),5px -5px 10px rgb(16, 228, 76);
+    
+}
+
+
+}
+
+
+@media (max-width: 550px){
+  
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: #dcf4d4;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        /* justify-self: flex-end; */
+        /* justify-self: right; */
+        display: flex;
+        flex-direction: column;
+        
+        /* margin: 5rem; */
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-right: 0rem;
+        margin-top: 0rem;
+        box-shadow: 0px 5px 50px rgb(8, 195, 202),-5px 5px 50px rgb(23, 72, 208),5px -5px 50px rgb(226, 237, 63);
+        border: none;
+        outline: none;
+       
+        
+    }
+    
+    .container_text_content{
+       
+        height: 100%;
+        width: 100%;
+        margin-top: 0.1rem;   
+        padding: 0px 0px 0px;
+    }
+    
+.outgoing{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-height: 15%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    border-radius: 10px 10px 0 10px;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    margin-top: 10  px;
+
+    
+}
+    
+    .outgoing span{
+        height: 30%;
+        
+        min-width: 15%;
+        font-size: 1.9rem;
+    }
+    .outgoing p{
+        /* min-height: 70px; */
+        height: auto;
+        width: auto;
+        font-size: 1.6rem;
+    }
+    
+    .incoming p{
+        width: auto;
+        max-width: 80%;
+        height: auto; 
+        font-size: 1.6rem;
+       font-weight: 500;
+    }
+    
+    .container_text_input{
+        height: auto;
+        min-height: 5rem;
+        width: 100%;
+       
+    }
+    .container_text_input input{
+        width: 87%;
+        height: auto;
+        border-style: none;
+        font-size: 1.5rem;
+    
+    }
+    .container_text_input i{
+        width: 13%;
+        height: 100%;
+        font-size: 2.0rem;
+    
+    }
+    
+    
+    }
