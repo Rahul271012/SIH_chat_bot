@@ -1,2 +1,2 @@
 # SIH_chat_bot
-This is chat bot for my project sih
+The chat bot was developed as part of the smart india hackathon
